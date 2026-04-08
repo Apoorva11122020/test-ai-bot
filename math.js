@@ -13,11 +13,16 @@ function subtract(a, b) {
     return a - b;
 }
 
-var unusedVar = 'never used';
-
 function fetchData() {
     fetch('https://api.example.com/data')
         .then(res => res.json())
         .then(data => console.log(data));
 }
 console.log('This is a test bot for cleaning up code.');
+module.exports = {
+    add,
+    divide,
+    multiply,
+    subtract,
+    fetchData
+};
