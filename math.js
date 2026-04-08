@@ -3,13 +3,12 @@ function add(a, b) {
 }
 
 function divide(a, b) {
-    return a / b;  // bug: no division by zero check
+    return a / b;
 }
 
-var unused = 'this variable is never used';
+var unusedVar = 'never used';
 
 function fetchData() {
-    // TODO: add error handling
     fetch('https://api.example.com/data')
         .then(res => res.json())
         .then(data => console.log(data));
