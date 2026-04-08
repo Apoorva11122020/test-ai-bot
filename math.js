@@ -20,3 +20,4 @@ function fetchData() {
         .then(res => res.json())
         .then(data => console.log(data));
 }
+console.log('This is a test bot for cleaning up code.');
